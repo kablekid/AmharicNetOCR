@@ -15,7 +15,6 @@ This repository implements an Optical Character Recognition (OCR) system for **A
 - **data/**: Contains training and test datasets for Amharic characters.
 - **src/**: Implementation of the neural network model, activation functions, loss functions, and training scripts.
 - **utils/**: Helper functions for data loading, preprocessing, and visualization.
-- **notebooks/**: Jupyter notebooks demonstrating the training process and model evaluation.
 
 ## How it Works
 
@@ -23,12 +22,11 @@ This repository implements an Optical Character Recognition (OCR) system for **A
 2. **Neural Network Architecture**: The network uses a multi-layer perceptron (MLP) architecture, with:
    - Input layer corresponding to flattened image pixels.
    - Hidden layers with activation functions like ReLU or Sigmoid.
-   - Output layer with 36 neurons (one for each character).
+   - Output layer with 37 neurons (one for each character).
 3. **Training Process**: The model is trained using backpropagation and gradient descent, optimizing a loss function for character classification accuracy.
 4. **Evaluation**: The trained model is evaluated on a test dataset of Amharic characters, assessing its ability to accurately predict the correct letter from unseen inputs.
 
 ## Goals
-
 - Build a fully functional OCR system for Amharic text.
 - Gain a deep understanding of how neural networks are implemented from the ground up.
 - Create a reusable and modifiable neural network implementation for other text recognition tasks.
@@ -44,7 +42,7 @@ This repository implements an Optical Character Recognition (OCR) system for **A
 To run this project, clone the repository and install the required dependencies:
 
 ```bash
-git clone https://github.com/yourusername/amharic-ocr-from-scratch.git
+git clone https://github.com/kablekid/amharic-ocr-from-scratch.git
 cd amharic-ocr-from-scratch
 pip install -r requirements.txt
 ```
