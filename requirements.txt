@@ -1,0 +1,4 @@
+matplotlib==3.9.2
+nnfs==0.5.1
+numpy==2.1.1
+pillow==10.4.0
